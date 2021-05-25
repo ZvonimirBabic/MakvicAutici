@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Makvić autići</string>
+    <string name="manufacturer">"Произвођач: "</string>
+    <string name="make">"Марка: "</string>
+    <string name="scale">"Скала: "</string>
+    <string name="date">"Објављено: "</string>
+    <string name="price">"Цијена: "</string>
+    <string name="imageDescription">Опис садржаја слике</string>
+    <string name="tilde">≈</string>
+    <string name="filter">Филтер</string>
+    <string name="sort">Врста</string>
+    <string name="retry">Покушај поново</string>
+    <string name="retry_text_error">Дошло је до грешке са вашим захтевом. Молим вас, покушајте поново!</string>
+    <string name="no_match">Није пронађен ниједан производ</string>
+    <string name="no_price">Цена на упит</string>
+    <string name="search">Претрага</string>
+    <string name="reset">Ресетовати</string>
+    <string name="newest">Најновије</string>
+    <string name="oldest">Најстарији</string>
+    <string name="most_expensive">Најскупљи</string>
+    <string name="least_expensive">Најјефтинији</string>
+    <string name="any_manufacturer">Било који произвођач</string>
+    <string name="any_scale">Било која скала</string>
+    <string name="any_make">Било која марка</string>
+    <string name="store">Пијаца</string>
+    <string name="wishlist">Листа жеља</string>
+    <string name="no_items_in_wishlist">Тренутно нема ставки на вашој листи жеља</string>
+    <string name="description">Опис</string>
+    <string name="seller">Продавац</string>
+    <string name="location">"Локација: "</string>
+    <string name="email">"Е-маил: "</string>
+    <string name="phone_number">"Телефон: "</string>
+    <string name="wishlistRemove">Уклоњено са ваше листе жеља</string>
+    <string name="wishlistAdd">Додато на вашу листу жеља</string>
+</resources>

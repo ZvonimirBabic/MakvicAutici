@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:screenOrientation="portrait"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <ImageView
+            android:id="@+id/recycler_view_product_cover_photo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/imageDescription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:lines="2"
+            android:maxLength="45"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/recycler_view_product_cover_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="BMW SERIJA 4 1:64 NOREV SIVI" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_manufacturer_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/manufacturer"
+            app:layout_constraintStart_toEndOf="@+id/recycler_view_product_cover_photo"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_product_title" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/no_price"
+            app:layout_constraintEnd_toStartOf="@+id/recycler_view_product_tilde_static"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_product_date"
+            tools:text="125.00 kn" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_manufacturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view_product_manufacturer_static"
+            app:layout_constraintStart_toEndOf="@+id/recycler_view_product_manufacturer_static"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_product_manufacturer_static"
+            tools:text="Norev" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_scale_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/scale"
+            app:layout_constraintStart_toEndOf="@+id/recycler_view_product_cover_photo"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_product_manufacturer_static" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view_product_scale_static"
+            app:layout_constraintStart_toEndOf="@+id/recycler_view_product_scale_static"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_product_scale_static"
+            tools:text="1:64" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_price_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view_product_price"
+            app:layout_constraintEnd_toStartOf="@+id/recycler_view_product_price"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_product_price"
+            tools:text="Cijena: " />
+
+        <TextView
+            android:id="@+id/recycler_view_product_price_in_eur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view_product_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_product_price"
+            tools:text="16.73 €" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_tilde_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tilde"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view_product_price_in_eur"
+            app:layout_constraintEnd_toStartOf="@+id/recycler_view_product_price_in_eur"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_product_price_in_eur"
+            tools:text=" ≈ " />
+
+        <TextView
+            android:id="@+id/recycler_view_product_date"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@+id/recycler_view_product_date_static"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view_product_date_static"
+            tools:text="13.05.1996" />
+
+        <TextView
+            android:id="@+id/recycler_view_product_date_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/date"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_product_scale_static"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_product_scale_static" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

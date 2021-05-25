@@ -1,3 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Makvić Autići</string>
+    <string name="app_name">Makvić autići</string>
+    <string name="price">"Price: "</string>
+    <string name="make">"Brand: "</string>
+    <string name="scale">"Scale: "</string>
+    <string name="date">"Published: "</string>
+    <string name="imageDescription">Image content description</string>
+    <string name="manufacturer">"Manufacturer: "</string>
+    <string name="tilde">≈</string>
+    <string name="filter">Filter</string>
+    <string name="retry">Retry</string>
+    <string name="retry_text_error">There was an error with Your request. Please try again!</string>
+    <string name="sort">Sort</string>
+    <string name="no_match">No products found</string>
+    <string name="no_price">Price on request</string>
+    <string name="search">Search</string>
+    <string name="reset">Reset</string>
+    <string name="newest">Newest</string>
+    <string name="oldest">Oldest</string>
+    <string name="most_expensive">Most expensive</string>
+    <string name="least_expensive">Least expensive</string>
+    <string name="any_manufacturer">"All manufacturers"</string>
+    <string name="any_make">"All makes"</string>
+    <string name="any_scale">"All scales"</string>
+    <string name="store">Store</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="no_items_in_wishlist">You currently have no items in your wishlist</string>
+    <string name="description">Description</string>
+    <string name="seller">Seller</string>
+    <string name="location">"Location: "</string>
+    <string name="phone_number">"Phone: "</string>
+    <string name="email">"E-mail: "</string>
+    <string name="wishlistAdd">"Added to your wishlist</string>
+    <string name="wishlistRemove">Removed from your wishlist</string>
 </resources>

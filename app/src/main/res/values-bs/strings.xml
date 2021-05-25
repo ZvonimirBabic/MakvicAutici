@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Makvić autići</string>
+    <string name="manufacturer">"Proizvođač: "</string>
+    <string name="make">"Marka: "</string>
+    <string name="scale">"Mjerilo: "</string>
+    <string name="date">"Objavljeno: "</string>
+    <string name="price">"Cijena: "</string>
+    <string name="imageDescription">Opis sadržaja slike</string>
+    <string name="tilde">≈</string>
+    <string name="filter">Filtriraj</string>
+    <string name="sort">Sortiraj</string>
+    <string name="retry">Pokušaj ponovo</string>
+    <string name="retry_text_error">Došlo je do pogreške s vašim zahtjevom. Molim te pokušaj ponovno!</string>
+    <string name="no_match">Nije pronađen nijedan proizvod</string>
+    <string name="no_price">Cijena na upit</string>
+    <string name="search">Traži</string>
+    <string name="reset">Resetiraj</string>
+    <string name="newest">Najnoviji</string>
+    <string name="oldest">Najstariji</string>
+    <string name="most_expensive">Najskuplji</string>
+    <string name="least_expensive">Najjeftiniji</string>
+    <string name="any_manufacturer">Svi proizvođači</string>
+    <string name="any_make">Sve marke</string>
+    <string name="any_scale">Sva mjerila</string>
+    <string name="store">Trgovina</string>
+    <string name="wishlist">Lista želja</string>
+    <string name="no_items_in_wishlist">Trenutno nema stavki na vašem popisu želja</string>
+    <string name="description">Opis</string>
+    <string name="seller">Prodavač</string>
+    <string name="location">"Lokacija: "</string>
+    <string name="phone_number">"Telefon: "</string>
+    <string name="email">E-mail:\u0020"</string>
+    <string name="wishlistRemove">Uklonjeno sa vaše liste želja</string>
+    <string name="wishlistAdd">Dodano na vašu listu želja</string>
+</resources>
