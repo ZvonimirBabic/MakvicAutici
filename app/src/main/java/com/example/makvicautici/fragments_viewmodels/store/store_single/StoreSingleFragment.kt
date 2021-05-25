@@ -31,11 +31,12 @@ class StoreSingleFragment : Fragment(R.layout.store_single_fragment_layout)
 
         binding.apply {
             val product = args.product
-            if (viewModel.wishlist.contains(product)) {
+
+            if ((viewModel.wishlist.contains(product) || viewModel.wishlistID.contains(product.id))) {
                 wishlistButton.setImageDrawable(resources.getDrawable(R.drawable.ic_baseline_star_24))
             }
             wishlistButton.setOnClickListener {
-                if (viewModel.wishlist.contains(product)) {
+                if ((viewModel.wishlist.contains(product) || viewModel.wishlistID.contains(product.id))) {
                     viewModel.removeFromWishlist(product)
                     wishlistButton.setImageDrawable(resources.getDrawable(R.drawable.ic_baseline_star_border_24))
                     Toast.makeText(context, getString(R.string.wishlistRemove), Toast.LENGTH_SHORT)

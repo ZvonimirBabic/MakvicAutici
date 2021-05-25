@@ -117,7 +117,8 @@ class StoreViewModel @ViewModelInject constructor(
     }
 
     fun removeFromWishlist(product: Product) {
-        wishlist.remove(product)
+
+        wishlist.removeAll{it.id == product.id }
         wishlistID.remove(product.id)
         Paper.book().write("wishlist", wishlist)
         Paper.book().write("wishlistID", wishlistID)
