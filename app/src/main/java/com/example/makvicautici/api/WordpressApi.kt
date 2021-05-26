@@ -31,19 +31,22 @@ interface WordpressApi {
     @GET("wco/v1/manufacturers")
     fun getManufacturers(
         @Query("page") Page: Int? = 1,
-        @Query("per_page") perPage: Int? = 100
+        @Query("per_page") perPage: Int? = 100,
+        @Query("hide_empty") empty: String= "true"
     ): Call<Manufacturers>
 
     @GET("wco/v1/makes")
     fun getMakes(
         @Query("page") Page: Int? = 1,
-        @Query("per_page") perPage: Int? = 100
+        @Query("per_page") perPage: Int? = 100,
+        @Query("hide_empty") empty: String= "true"
     ): Call<Makes>
 
     @GET("wco/v1/scales")
     fun getScales(
         @Query("page") Page: Int? = 1,
-        @Query("per_page") perPage: Int? = 100
+        @Query("per_page") perPage: Int? = 100,
+        @Query("hide_empty") empty: String= "true"
     ): Call<Scales>
 
 

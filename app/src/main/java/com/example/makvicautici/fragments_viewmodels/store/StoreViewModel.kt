@@ -9,6 +9,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import com.example.makvicautici.R
 import com.example.makvicautici.api.repository.WordpressRepository
+import com.example.makvicautici.api.responses.makes.Makes
 import com.example.makvicautici.api.responses.products.Product
 import com.example.makvicautici.api.responses.products.Products
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -38,12 +39,15 @@ class StoreViewModel @ViewModelInject constructor(
 
     // Manufacturers / Makes / Scales data
     var manufacturersList = repository.fillManufacturers()
-    var makesList = repository.fillMakes()
+    var makesListPage1 = repository.fillMakes(1)
+    var makesListPage2 = repository.fillMakes(2)
     var scalesList = repository.fillScales()
+    var makesList = MutableLiveData<Makes>()
+
 
     // Force refresh RecyclerView data
     var forceRefresh: MutableLiveData<String?> = MutableLiveData(null)
-    private fun forceRefresh(){
+    private fun forceRefresh() {
         forceRefresh.value = forceRefresh.value
     }
 
@@ -118,7 +122,7 @@ class StoreViewModel @ViewModelInject constructor(
 
     fun removeFromWishlist(product: Product) {
 
-        wishlist.removeAll{it.id == product.id }
+        wishlist.removeAll { it.id == product.id }
         wishlistID.remove(product.id)
         Paper.book().write("wishlist", wishlist)
         Paper.book().write("wishlistID", wishlistID)

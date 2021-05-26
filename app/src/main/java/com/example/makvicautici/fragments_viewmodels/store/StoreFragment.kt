@@ -38,6 +38,14 @@ class StoreFragment : Fragment(R.layout.store_fragment_layout), ProductAdapter.O
 
         viewModel.data.observe(viewLifecycleOwner) {
             adapter.submitData(viewLifecycleOwner.lifecycle, it)
+            binding.productRecyclerView.scrollToPosition(0)
+        }
+        viewModel.makesListPage1.observe(viewLifecycleOwner) {
+            viewModel.makesList.value = it
+        }
+        viewModel.makesListPage2.observe(viewLifecycleOwner) {
+
+            viewModel.makesList.value?.addAll(it)
         }
 
         binding.apply {

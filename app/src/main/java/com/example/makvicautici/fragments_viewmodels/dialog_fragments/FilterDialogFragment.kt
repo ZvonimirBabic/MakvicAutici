@@ -118,7 +118,7 @@ class FilterDialogFragment(
         buttonSearch.setOnClickListener {
             var selectedManufacturer = (spinnerManufacturer.selectedItem as Manufacturer).slug
             var selectedMake = (spinnerMake.selectedItem as Make).slug
-            var selectedScale = (spinnerScale.selectedItem as Make).slug
+            var selectedScale = (spinnerScale.selectedItem as Scale).slug
             viewModel.filter(
                 selectedManufacturerSlug = selectedManufacturer,
                 selectedMakeSlug = selectedMake,

@@ -57,8 +57,8 @@ class WordpressRepository @Inject constructor(private val wordpressApi: Wordpres
         return data
     }
 
-    fun fillMakes(): MutableLiveData<Makes> {
-        val call = wordpressApi.getMakes()
+    fun fillMakes(page: Int?): MutableLiveData<Makes> {
+        val call = wordpressApi.getMakes(Page = page)
         var data = MutableLiveData<Makes>()
         call.enqueue(object : Callback<Makes> {
             override fun onFailure(call: Call<Makes>?, t: Throwable?) {
