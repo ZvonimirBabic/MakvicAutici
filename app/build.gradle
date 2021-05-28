@@ -20,7 +20,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.makvic.makvicautici"
+        applicationId "com.example.makvicautici"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

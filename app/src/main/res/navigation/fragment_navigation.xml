@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/storeFragment"
-        android:name="com.makvic.makvicautici.fragments_viewmodels.store.StoreFragment"
+        android:name="com.example.makvicautici.fragments_viewmodels.store.StoreFragment"
         android:label="@string/app_name"
         tools:layout="@layout/store_fragment_layout">
         <action
@@ -16,16 +16,16 @@
     </fragment>
     <fragment
         android:id="@+id/storeSingleFragment"
-        android:name="com.makvic.makvicautici.fragments_viewmodels.store.store_single.StoreSingleFragment"
+        android:name="com.example.makvicautici.fragments_viewmodels.store.store_single.StoreSingleFragment"
         android:label="@string/app_name"
         tools:layout="@layout/store_single_fragment_layout">
         <argument
             android:name="product"
-            app:argType="com.makvic.makvicautici.api.responses.products.Product" />
+            app:argType="com.example.makvicautici.api.responses.products.Product" />
     </fragment>
     <fragment
         android:id="@+id/wishlistFragment"
-        android:name="com.makvic.makvicautici.fragments_viewmodels.wishlist.WishlistFragment"
+        android:name="com.example.makvicautici.fragments_viewmodels.wishlist.WishlistFragment"
         android:label="@string/wishlist">
         <action
             android:id="@+id/action_wishlistFragment_to_storeSingleFragment"
