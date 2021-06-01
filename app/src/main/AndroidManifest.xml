@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.makvicautici">
+    package="com.makvic.makvicautici">
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 
     <application
-        android:name=".MakvicAutici"
+        android:name="com.makvic.makvicautici.MakvicAutici"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MakvićAutići">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.makvic.makvicautici.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
