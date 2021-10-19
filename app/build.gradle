@@ -10,8 +10,7 @@ plugins {
 android {
     signingConfigs {
         release {
-            storeFile file('C:\\Users\\BlackWW\\Keystore\\keystore.jks')
-
+           
         }
     }
     compileSdkVersion 30
